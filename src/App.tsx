@@ -3,51 +3,9 @@ import { lightTheme, darkTheme } from "./theme";
 import { useState } from "react";
 import * as S from "./AppStyles";
 import { ProductCard } from "./components/ProductCard";
-import { AnimatePresence, motion, LayoutGroup } from "framer-motion";
+import { AnimatePresence, LayoutGroup } from "framer-motion";
 import { ProductModal } from "./components/ProductModal";
-
-const products = [
-  {
-    id: 1,
-    name: "Merlot Red Wine",
-    category: "Wine",
-    price: 25,
-    image: "https://cdn-icons-png.flaticon.com/512/2548/2548578.png",
-    description: "A smooth and fruity Merlot perfect for any occasion.",
-  },
-  {
-    id: 2,
-    name: "Craft Lager Beer",
-    category: "Beer",
-    price: 10,
-    image: "https://cdn-icons-png.flaticon.com/512/2548/2548518.png",
-    description: "Crisp golden lager brewed with passion.",
-  },
-  {
-    id: 3,
-    name: "Arabica Coffee",
-    category: "Coffee",
-    price: 12,
-    image: "https://cdn-icons-png.flaticon.com/512/924/924514.png",
-    description: "Strong and aromatic Arabica beans roasted to perfection.",
-  },
-  {
-    id: 4,
-    name: "Cola Soda",
-    category: "Soda",
-    price: 5,
-    image: "https://cdn-icons-png.flaticon.com/512/2548/2548575.png",
-    description: "Classic fizzy cola for a refreshing moment.",
-  },
-  {
-    id: 5,
-    name: "Premium Whisky",
-    category: "Whisky",
-    price: 45,
-    image: "https://cdn-icons-png.flaticon.com/512/2548/2548525.png",
-    description: "Aged oak barrel whisky with a smooth finish.",
-  },
-];
+import { products } from "./data/products";
 
 function App() {
   const [isDark, setIsDark] = useState(false);

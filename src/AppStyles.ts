@@ -79,7 +79,8 @@ export const CartCount = styled.span`
 
 export const Grid = styled.div`
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-  gap: 24px;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 32px;
   padding: 40px;
+  align-items: start;
 `;
